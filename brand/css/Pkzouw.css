@@ -1,0 +1,39 @@
+@media screen and (max-width: 767px) {
+    section {
+        padding: 40px 0;
+    }
+
+    .grid-6 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .color-box,
+    .font-box {
+        padding: 15px;
+    }
+
+    .font,
+    .text-block-16,
+    section p {
+        font-size: 16px;
+    }
+
+    .w-container {
+        max-width: 100%;
+    }
+
+    .square-logo {
+        width: 100px;
+        height: 100px;
+        margin: 0 5px;
+    }
+
+    .collection-list-2 {
+        gap: 10px;
+    }
+
+    .square-logo-container {
+        margin-top: 10px;
+    }
+}
+

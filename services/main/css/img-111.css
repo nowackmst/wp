@@ -1,0 +1,111 @@
+.images-container img {
+    flex: 0 0 calc(25% - 1em); /* 25% lebar parent, dikurangi margin-right */
+    box-sizing: border-box;
+    margin-right: 1em; /* Add margin right here */
+    margin-bottom: 1.5em;
+    padding-top: 1.5em;
+    padding: 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.images-container:hover {
+    transform: scale(1.05);
+}
+
+.images-container img {
+    object-fit: contain;
+    width: 100%;
+    height: 100px;
+}
+
+
+.animated-box {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-logo {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Lebar maksimum logo sedikit lebih besar */
+    margin: 0 auto; /* Pusatkan logo secara horizontal */
+    z-index: 1; /* Pastikan logo berada di atas node bergerak */
+}
+
+.banner-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.moving-node {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: moveNode 5s linear infinite;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes moveNode {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: calc(100% - 20px);
+        top: 0;
+    }
+    50% {
+        left: calc(100% - 20px);
+        top: calc(100% - 20px);
+    }
+    75% {
+        left: 0;
+        top: calc(100% - 20px);
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+
+  
+  .info-box.blockchain-service {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.info-box.blockchain-service h2,
+.info-box.blockchain-service p {
+    color: #fff;
+}
+
+.info-box.endpoints a {
+    color: #4BE1EC;
+}
+
+.info-box.endpoints a:hover {
+    color: #38b2cc;
+}

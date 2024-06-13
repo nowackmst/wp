@@ -1,0 +1,23 @@
+.fancy-link {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fancy-link a {
+    display: inline-block;
+    background-color: #29FF94; /* Spring Green */
+    color: #010101;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.fancy-link a:hover {
+    background-color: #1cbf6e; /* Darker Spring Green saat hover */
+    transition: background-color 0.3s ease;
+}
+
+
+

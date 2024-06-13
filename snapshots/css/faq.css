@@ -1,0 +1,237 @@
+/* Apply styles to the hero section */
+.hero {
+  background-color: #333; /* Adjust the background color as needed */
+  color: #fff; /* Adjust the text color as needed */
+  text-align: center;
+  padding: 100px 0; /* Adjust the padding as needed */
+}
+
+/* Apply styles to the content within the hero section */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Apply styles to the h1 within the hero section */
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Apply styles to the span within the h1 */
+.hero h1 span {
+  color: #ffcc00; /* Adjust the color of the span as needed */
+}
+
+/* Apply styles to the cta link within the hero section */
+.cta {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ffcc00; /* Adjust the background color of the cta button as needed */
+  color: #333; /* Adjust the text color of the cta button as needed */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Add hover effect for the cta link */
+.cta:hover {
+  background-color: #ff9900; /* Adjust the background color on hover as needed */
+}
+
+
+  
+  /* ///////////////////////////////////////////// */
+
+  #faq-snap {
+    padding: 3rem 7% 1.4rem;
+    text-align: center;
+}
+
+#faq-snap h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    color: #fff;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.faq-question h3 {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Gellix", sans-serif;
+    -webkit-text-size-adjust: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    text-align: center;
+}
+
+.faq-answer p {
+    margin-top: 5px;
+    font-family: "Gellix", sans-serif;
+    -webkit-text-size-adjust: 100%;
+    color: #b4adad;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.faq-toggle {
+    font-weight: bold;
+    color: #ffffff; /* Warna putih */
+    margin-left: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.faq-toggle.rotate {
+    transform: rotate(45deg);
+}
+
+/* ///////////////////////////////////////////// */
+
+/* Desktop Styles */
+.snap-ttr {
+  padding: 3rem 7% 1.4rem;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: content-box;
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 0px;
+}
+
+.snap-ttr h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  color: #fff;
+}
+
+.ttr-row {
+  display: flex;
+  justify-content: center;
+}
+
+.ttr-card {
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 10px;
+  width: 400px;
+  text-align: left;
+  transition: background-color 0.3s;
+}
+
+.ttr-card:hover {
+  background-color: #e0e0e0;
+}
+
+.title-ttr {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #010101;
+}
+
+.p-one,
+.p-two,
+.p-theree,
+.p-four {
+  position: relative;
+  padding-left: 16px;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.p-one::before,
+.p-two::before,
+.p-theree::before,
+.p-four::before {
+  content: '\2022';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  color: #666;
+}
+
+.ttr-ctrl {
+  color: #0C0C0C;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .snap-ttr {
+      padding: 1rem;
+      padding-top: 30px;
+  }
+
+  .snap-ttr h2 {
+      font-size: 2rem;
+  }
+
+  .ttr-row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .ttr-card {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .ttr-card:hover {
+      background-color: #f7f7f7; /* Adjust hover color for better visibility on mobile */
+  }
+
+  .title-ttr {
+      font-size: 18px;
+      margin-bottom: 8px;
+  }
+
+  .p-one,
+  .p-two,
+  .p-theree,
+  .p-four {
+      padding-left: 0;
+      font-size: 14px;
+  }
+
+  .p-one::before,
+  .p-two::before,
+  .p-theree::before,
+  .p-four::before {
+      display: none; /* Remove bullet point for mobile */
+  }
+
+  .ttr-ctrl {
+      font-size: 16px;
+  }
+}
+
+
+
+

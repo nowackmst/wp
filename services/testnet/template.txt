@@ -1,0 +1,209 @@
+    <style>
+        /* Example CSS to enhance the appearance */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .heros {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .left-content, .right-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .name {
+            font-size: 2.5em;
+            color: #333;
+        }
+        .tagline {
+            font-size: 1.2em;
+            color: #777;
+            margin-bottom: 20px;
+        }
+        .info-box {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .info-box:hover {
+            background: #f9f9f9;
+        }
+        .copy-message {
+            display: none;
+            color: green;
+            font-size: 0.9em;
+        }
+        .fancy-link a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .animated-box {
+            position: relative;
+            margin: 20px 0;
+        }
+        .banner-logo {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .moving-node {
+            width: 10px;
+            height: 10px;
+            background: #007bff;
+            position: absolute;
+            border-radius: 50%;
+            animation: move 5s infinite;
+        }
+        @keyframes move {
+            0% { top: 0; left: 0; }
+            25% { top: 0; left: 100%; }
+            50% { top: 100%; left: 100%; }
+            75% { top: 100%; left: 0; }
+            100% { top: 0; left: 0; }
+        }
+        .network img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background: #f4f4f4;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul li a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <section class="heros" id="home">
+        <main class="content">
+            <div class="left-content">
+                <h1 class="name">Warden Protocol</h1>
+                <p class="tagline">Modular L1 Blockchain Infrastructure Empowering Omnichain Applications!</p>
+                <div class="info-box white-box" onclick="copyText(this)">
+                    <h2>Automatic Installation</h2>
+                    <p>source <(curl -s https://artstake.net/api/testnet/warden/autoinstall/)</p>
+                    <div class="copy-message">Copied!</div>
+                </div>
+                <div class="fancy-link">
+                    <a href="https://tutorial.com" target="_blank">Manual Installation</a>
+                </div>
+                <div class="animated-box">
+                    <img src="/services/img/w-b-banner.png" alt="Logo Banner Anda" class="banner-logo">
+                    <div class="moving-node"></div>
+                    <div class="moving-node"></div>
+                    <div class="moving-node"></div>
+                    <div class="moving-node"></div>
+                    <div class="moving-node"></div>
+                    <div class="moving-node"></div>
+                </div>
+                <div class="info-box white-box" onclick="copyText(this)">
+                    <h2>Create a New Wallet</h2>
+                    <div class="data-container">
+                        <p>wardend keys add $WALLET</p>
+                    </div>
+                    <div class="copy-message">Copied!</div>
+                </div>
+                <div class="info-box white-box" onclick="copyText(this)">
+                    <h2>Import Wallet</h2>
+                    <div class="data-container">
+                        <p>wardend keys add $WALLET --recover</p>
+                    </div>
+                    <div class="copy-message">Copied!</div>
+                </div>
+                <div class="info-box white-box" onclick="copyText(this)">
+                    <h2>Save Wallet and Validator Address</h2>
+                    <div class="data-container">
+                        <p>WALLET_ADDRESS=$(wardend keys show $WALLET -a)<br>
+                        VALOPER_ADDRESS=$(wardend keys show $WALLET --bech val -a)<br>
+                        echo "export WALLET_ADDRESS=$WALLET_ADDRESS" >> $HOME/.bash_profile<br>
+                        echo "export VALOPER_ADDRESS=$VALOPER_ADDRESS" >> $HOME/.bash_profile<br>
+                        source $HOME/.bash_profile</p>
+                    </div>
+                    <div class="copy-message">Copied!</div>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="info-box network">
+                    <h2>Network Information</h2>
+                    <div class="images-container">
+                        <img src="/services/testnet/warden/logo.svg" alt="Gambar">
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Chain ID</th>
+                            <td id="network">#</td>
+                        </tr>
+                        <tr>
+                            <th>Block Height</th>
+                            <td id="blockHeight">#</td>
+                        </tr>                        
+                        <tr>
+                            <th>RPC Status</th>
+                            <td id="rpcStatus">Active</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="info-box blockchain-service">
+                    <h2>Blockchain Services</h2>
+                    <p>Comprehensive Solutions | Services & Tools for all users.</p>
+                </div>
+                <div class="info-box endpoints">
+                    <h2>Endpoints</h2>
+                    <ul>
+                        <li><strong>RPC:</strong> <a href="http://5.189.146.116:26657/" target="_blank">https://artstake.net/rpc-testnet/warden</a></li>
+                        <li><strong>API:</strong> <a href="https://warden-testnet-api.artstake.net" target="_blank">https://warden-testnet-api.artstake.net</a></li>
+                        <li><strong>gRPC:</strong> <a href="https://warden-testnet-grpc.artstake.net:11090" target="_blank">https://warden-testnet-grpc.artstake.net:18090</a></li>
+                        <li><strong>Explorer:</strong> <a href="https://test.artstake.net/" target="_blank">https://test.artstake.net/warden</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <script>
+        function copyText(element) {
+            const text = element.querySelector('.data-container p').innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                const message = element.querySelector('.copy-message');
+                message.style.display = 'block';
+                setTimeout(() => {
+                    message.style.display = 'none';
+                }, 2000);
+            });
+        }
+    </script>

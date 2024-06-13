@@ -1,0 +1,88 @@
+#stat {
+    padding: 4rem 7%;
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 12px;
+}
+
+.stats-home {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    width: 45%;
+    margin: 1rem;
+    box-sizing: border-box;
+}
+
+.stat-item:hover {
+    transform: scale(1.05);
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #29FF94;
+}
+
+.stat-label {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.eco-friendly {
+    background-color: #c2e5cb;
+    order: 1; /* Set the order to move it to the right */
+}
+
+.stat-icon {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.fa-network-wired {
+    font-size: 8rem;
+    color: #29FF94;
+}
+
+.view-stats-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.view-stats-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.view-stats-button:hover {
+    background-color: #2980b9;
+}
+
+.view-stats-button .link-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}

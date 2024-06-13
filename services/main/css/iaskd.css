@@ -1,0 +1,35 @@
+/* Tambahkan animasi */
+@keyframes showCopied {
+    0% { opacity: 0; transform: translateY(0); }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+
+/* Styling untuk kotak pesan yang muncul saat disalin */
+.copy-message {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none; /* awalnya tersembunyi */
+    animation: showCopied 1s ease-in-out; /* gunakan animasi showCopied */
+}
+
+/* Munculkan pesan copied saat animasi */
+.info-box.copied .copy-message {
+    display: block;
+}
+
+
+.info-box.white-box {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.info-box.white-box:hover {
+    transform: scale(1.05); /* Menggunakan efek scale untuk memperbesar saat hover */
+}
+

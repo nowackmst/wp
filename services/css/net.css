@@ -1,0 +1,102 @@
+/* Mengimpor font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+/* Gaya untuk section proyek */
+.projects {
+  padding: 40px 200px;
+  background-color: #010101; /* Warna latar belakang hitam */
+  color: #FF66C4; /* Warna teks neon pink */
+  text-align: center;
+  font-family: 'Raleway', sans-serif; /* Menggunakan font Raleway */
+}
+
+.projects h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #FF0F7B; /* Warna deep pink */
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center; /* Tengahkan vertikal */
+  text-align: center; /* Tengahkan horizontal */
+  grid-auto-flow: row; /* Baris baru untuk proyek ke-11 */
+}
+
+.project-item {
+  border: 1px solid #4BE1EC; /* Border warna turquoise */
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Roboto', sans-serif; /* Menggunakan font Roboto */
+  text-decoration: none; /* Menghapus underline pada link */
+  color: inherit; /* Memastikan warna teks sesuai dengan section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(75, 225, 236, 0.4); /* Warna bayangan turquoise dengan opacity */
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Membuat gambar berbentuk bulat */
+}
+
+.project-item p {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: white; /* Warna teks putih */
+  font-family: 'Montserrat', sans-serif; /* Menggunakan font Montserrat */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* Menyesuaikan ukuran font jika teks terlalu panjang */
+.project-item p {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+/* Media query untuk tampilan responsif */
+@media (max-width: 600px) {
+  .projects-container {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Mengubah lebar kotak proyek pada layar kecil */
+  }
+}
+
+/* Media query untuk tampilan responsif pada layar kecil seperti di Android */
+@media (max-width: 600px) {
+  .projects {
+    padding: 20px; /* Mengurangi padding pada layar kecil */
+  }
+
+  .projects h2 {
+    font-size: 1.5em; /* Mengurangi ukuran font pada judul proyek */
+  }
+
+  .projects-container {
+    grid-gap: 10px; /* Mengurangi jarak antar proyek pada layar kecil */
+  }
+
+  .project-item {
+    padding: 5px; /* Mengurangi padding pada proyek pada layar kecil */
+  }
+
+  .project-item p {
+    font-size: 0.8em; /* Mengurangi ukuran font pada deskripsi proyek */
+  }
+}

@@ -1,0 +1,111 @@
+#team,
+#additional-team {
+  padding: 100px 0;
+  position: relative;
+}
+
+.change-image-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.team-member img,
+.additional-team-member img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%; /* Membuat gambar menjadi bulat */
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out; /* Efek transisi pada gambar */
+}
+
+.team-member img:hover,
+.additional-team-member img:hover {
+  transform: scale(1.1); /* Efek zoom pada gambar saat hover */
+}
+
+#team h2,
+#additional-team h2 {
+  font-size: 42px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.team-container,
+.additional-team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.team-member,
+.additional-team-member {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #2c2c2c; /* Warna latar belakang yang lebih gelap */
+  border-radius: 15px; /* Sudut lebih bulat */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Bayangan yang lebih halus */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Tambahkan transisi untuk warna latar belakang */
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.team-member:hover,
+.additional-team-member:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+  background-color: #3a3a3a; /* Warna latar belakang saat hover */
+}
+
+.team-member h3,
+.additional-team-member h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.team-info,
+.additional-team-member .team-info {
+  opacity: 0;
+  transform: translateY(20px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 0 0 15px 15px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  color: #333;
+}
+
+.team-member:hover .team-info,
+.additional-team-member:hover .team-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ceo-label,
+.team-label {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FF66C4;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+}

@@ -1,0 +1,234 @@
+.color-box,
+.font-box {
+        padding: 20px;
+}
+
+
+
+.color-box,
+.font-box,
+section {
+        text-align: center;
+}
+.font-link,
+.link-block-10,
+body,
+h1,
+h2,
+h3,
+p {
+        text-decoration: none;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: 0;
+        border: none;
+        font-family: Montserrat, sans-serif;
+        line-height: 1.6;
+}
+html {
+        scroll-behavior: smooth;
+}
+section {
+        padding: 80px 0;
+        background-color: #f8f8f8;
+        margin: 40px;
+}
+.font,
+.text-block-16,
+section p {
+        color: #666;
+}
+.container,
+.container-7,
+.w-container {
+        max-width: 90%;
+        margin: 0 auto;
+}
+h1,
+h2,
+h3 {
+        color: #333;
+}
+.grid-6 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+}
+.color-box {
+        border-radius: 8px;
+        background-color: transparent;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
+}
+.font-box,
+.image-13 {
+        transition: transform 0.3s;
+}
+.color {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+}
+.color-box:hover .color,
+.font-box {
+        border: 1px solid #ddd;
+}
+.deep-pink {
+        background-color: #ff0f7b;
+        color: #fff;
+}
+.neon-pink {
+        background-color: #ff66c4;
+        color: #fff;
+}
+.midnight-blue {
+        background-color: #070766;
+        color: #fff;
+}
+.turquoise {
+        background-color: #4be1ec;
+        color: #000;
+}
+.dark-grey {
+        background-color: #010101;
+        color: #fff;
+}
+.dark-wit {
+        background-color: #29ff94;
+        color: #fff;
+}
+.heading-19 {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+        color: #333;
+}
+.color-box:hover {
+        background-color: #eee;
+        color: #555;
+        cursor: pointer;
+}
+.font {
+        color: #010101;
+        margin: 24px;
+}
+.font-box {
+        margin: 10px;
+}
+.font-link:hover {
+        text-decoration: underline;
+}
+.w-container {
+        max-width: 728px;
+        margin-left: auto;
+        margin-right: auto;
+}
+.div-block-40 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+.collection-list-2 {
+        display: flex;
+        flex-wrap: wrap;
+}
+.w-col {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+}
+.link-block-10 {
+        display: block;
+}
+.div-block-35 {
+        position: relative;
+        overflow: hidden;
+}
+.image-13 {
+        width: 100%;
+        height: auto;
+        border: 0;
+        max-width: 100%;
+}
+.div-block-36 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s;
+}
+.text-block-17 {
+        color: #fff;
+        font-size: 1.2em;
+        font-weight: 700;
+}
+.div-block-35:hover .div-block-36 {
+        opacity: 1;
+}
+.font-box:hover,
+.square-logo:hover {
+        transform: scale(1.1);
+}
+.collection-list-2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+}
+.w-dyn-item {
+        margin: 0 10px 20px;
+}
+.square-logo-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+}
+.square-logo {
+        width: 200px;
+        height: 200px;
+        margin: 0 10px;
+        transition: transform 0.3s;
+}
+@media screen and (max-width: 767px) {
+        section {
+                padding: 50px 0;
+        }
+        .grid-6 {
+                grid-template-columns: repeat(1, 1fr);
+        }
+        .color-box,
+        .font-box {
+                padding: 15px;
+        }
+        .font,
+        .text-block-16,
+        section p {
+                font-size: 16px;
+        }
+        .w-container {
+                max-width: 100%;
+        }
+        .square-logo {
+                width: 60px;
+                height: 60px;
+                margin: 0 5px;
+        }
+        .collection-list-2 {
+                gap: 10px;
+        }
+        .square-logo-container {
+                margin-top: 10px;
+        }
+}

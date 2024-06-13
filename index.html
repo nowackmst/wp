@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="animatedTitle">ART Stake - Simple and safe for all users.</title>
+    <link rel="shortcut icon" href="https://artstake.net/asset/art-brand/ART-logo-bg/b-w-logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://example.com/fontawesome/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="css/navdash.css" />
+    <link rel="stylesheet" href="css/logapy.css" />
+    <link rel="stylesheet" href="css/stats.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/" class="navbar-logo">
+        <img src="https://artstake.net/asset/art-brand/ART-banner-no-bg/w-b-banner.png" alt="ART Stake" oncontextmenu="return false;" />
+      </a>
+      <div class="navbar-nav">
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle">About&nbsp; <i class="fas fa-angle-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="/team/">TEAM</a>
+            </li>
+            <li>
+              <a href="/brand/">BRAND</a>
+            </li>
+            <li>
+              <a href="/#carousel">PRODUCTS</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="#menu-mainnet" class="dropdown-toggle">Network&nbsp; <i class="fas fa-angle-down"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-network">
+            <li>
+              <a href="/#menu-mainnet">MAINNET</a>
+            </li>
+            <li>
+              <a href="/testnet/">TESTNET</a>
+            </li>
+              <li><a href="/services/">SERVICE</a></li>
+            <li>
+              <a href="/snapshots/">SNAPSHOT</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="#menu" class="dropdown-toggle">Explorer&nbsp; <i class="fas fa-angle-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="https://main.artstake.net/" target="_blank">MAINNET</a>
+            </li>
+            <li>
+              <a href="https://test.artstake.net" target="_blank">TESTNET</a>
+            </li>
+          </ul>
+        </div>
+        <a href="https://news.artstake.net/" target="_blank">Blog &amp; News</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="navbar-extra">
+        <div class="mobile">
+          <a id="dashboard" href="#">
+            <div class="dashboard-text">View Apps</div>
+            <img src="https://assets-global.website-files.com/625c39b93541414104a1d654/63f62bb287f5f456cb0c2d79_Right%20Up%20Circle%201.svg" alt="Tanda Panah">
+          </a>
+          <a href="#open" id="hamburger-menu">
+            <i data-feather="menu"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero" id="home">
+      <div id="particles-js"></div>
+      <main class="content">
+        <h1>Stake your tokens with <span class="">ART Stake</span>! </h1>
+        <p>Simple and safe for all users.</p>
+        <a href="#menu-mainnet" class="cta">STAKE</a>
+      </main>
+    </section>
+    <section id="menu-mainnet" class="menu-mainnet">
+      <h2>STAKE <span>MAINNET</span></h2>
+      <div class="row" id="menu-cards-container"></div>
+    </section>
+    <script src="js/card-menu.js"></script>
+    <script>
+      const faqToggle = document.querySelector(".faq-toggle");
+    
+      faqToggle.addEventListener("click", function () {
+        this.classList.toggle("active");
+      });
+    
+      const faqQuestions = document.querySelectorAll(".faq-question");
+    
+      faqQuestions.forEach((question) => {
+        question.addEventListener("click", toggleAnswer);
+      });
+    
+      function toggleAnswer() {
+        const answer = this.nextElementSibling;
+    
+        this.classList.toggle("active");
+        answer.classList.toggle("active");
+    
+        if (answer.classList.contains("active")) {
+          answer.style.maxHeight = answer.scrollHeight + "px";
+        } else {
+          answer.style.maxHeight = "0";
+        }
+      }
+    </script>
+
+<section class="stat" id="stat">
+  <div class="stats-home">
+    <!-- Total Transactions -->
+    <div class="stat-item">
+      <div class="stat-value">20</div>
+      <div class="stat-label">Total User Stake</div>
+    </div>
+
+    <!-- Total Gas Fees Saved -->
+    <div class="stat-item">
+      <div class="stat-value">$???</div>
+      <div class="stat-label">Total Assets Delegation</div>
+    </div>
+
+    <!-- Eco-Friendly -->
+    <div class="stat-item eco-friendly">
+      <i class="fa-solid fa-network-wired"></i>
+      <div class="stat-label">PoS Testnet</div>
+    </div>
+
+    <!-- Unique Wallets -->
+    <div class="stat-item">
+      <div class="stat-value">5</div>
+      <div class="stat-label">Mainnet Network</div>
+    </div>
+
+    <!-- Validator Nodes -->
+    <div class="stat-item">
+      <div class="stat-value">8</div>
+      <div class="stat-label">Testnet Network</div>
+    </div>
+  </div>
+
+  <div class="view-stats-container">
+    <a href="/testnet/" class="view-stats-button">
+      View all Testnet <i class="fa-solid fa-angles-right" style="margin-left: 5px;"></i>
+    </a>
+  </div>
+</section>
+    <section id="mainnet-testnet" class="mainnet-testnet">
+      <h2>Ended&nbsp;& <span>&nbsp;Archived</span></h2>
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="https://artstake.net/asset/node/archived/AkwyUfyy.png" />
+          <img src="https://artstake.net/asset/node/archived/ApK_uOs.jpg" />
+          <img src="https://artstake.net/asset/node/archived/Bf-5BL32.png" />
+          <img src="https://artstake.net/asset/node/archived/hhygMdg9_.jpg" />
+          <img src="https://artstake.net/asset/node/archived/IArh_9iKll.jpg" />
+          <img src="https://artstake.net/asset/node/archived/lP_WJgdC.jpg" />
+          <img src="https://artstake.net/asset/node/archived/Qews_okPn.jpg" />
+          <img src="https://artstake.net/asset/node/archived/S9IIkgPS.png" />
+          <img src="https://artstake.net/asset/node/archived/V2gPwVeO.jpg" />
+          <img src="https://artstake.net/asset/node/archived/vhK_6xp-.jpg" />
+          <img src="https://artstake.net/asset/node/archived/XfukKhac.jpg" />
+          <img src="https://artstake.net/asset/node/archived/ZwCiwcR8_.jpg" />
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <h2>ABOUT&nbsp; <span>US</span>
+      </h2>
+      <div class="row">
+        <div class="about-img" id="img-team">
+          <img src="https://artstake.net/asset/art-brand/global-ART/hero/w-s-c.svg" alt="about us" class="img" />
+        </div>
+        <div class="content">
+          <div class="space-main">
+            <div class="space">
+              <h3 class="space-title">
+                <i class="fas fa-bullseye"></i> Early Access
+              </h3>
+              <div>
+                <p>Secure exclusive access to the most successful projects within the ecosystem through the meticulous expertise and research provided by ART-Team. </p>
+              </div>
+            </div>
+            <div class="space">
+              <h3 class="space-title">
+                <i class="fas fa-search"></i> Meticulous Selection
+              </h3>
+              <div>
+                <p>ART-Team meticulously tracks the progress of projects from the initial phase, ensuring that only the best projects are placed on our Dashboard.</p>
+              </div>
+            </div>
+            <div class="space">
+              <h3 class="space-title">
+                <i class="fas fa-chart-line"></i> Clear Returns
+              </h3>
+              <div>
+                <p>We not only provide lucrative returns, but also operate a commission-based system - with no hidden fees for delegators to worry about.</p>
+              </div>
+            </div>
+            <div class="space">
+              <h3 class="space-title">
+                <i class="fas fa-group-arrows-rotate"></i> Innovative Empowerment
+              </h3>
+              <div>
+                <p>We create free tools, documentation and guidelines that are easy and accessible for everyone.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about2" class="about2">
+      <div class="row2">
+        <div class="art-stake">
+          <span>A</span>
+          <span>R</span>
+          <span>T</span>
+          <br />
+          <span>S</span>
+          <span>T</span>
+          <span>A</span>
+          <span>K</span>
+          <span>E</span>
+        </div>
+      </div>
+      <!-- <div class="logo-about2">
+        <img src="https://artstake.net/img/node/w-p-b-logo.png" alt="logo-about2" />
+      </div> -->
+      <div class="row2">
+        <div class="vision">
+          <div class="title-about">VISION</div>
+          <div class="content2">Committed to embracing the ongoing transformation, ARTStake believes that through leveraging collaborative intelligence and the reliability of blockchain technology, we can unlock the gateway to a future brimming with extraordinary potential.</div>
+        </div>
+        <div class="mission">
+          <div class="title-about">MISSION</div>
+          <div class="content2">Confident that blockchain will revolutionize our lifestyles and interactions, ARTStake acknowledges that this revolution is already underway. Committed to acting as a change agent fostering positive impacts for all, together we delve into the limitless potential of this transformative technology.</div>
+        </div>
+        
+      </div>
+      <div class="columns">
+        <div>
+          <div class="title-about">EXPERIENCE</div>
+          <div class="content2">ART][Stake boasts a team comprised of highly talented experts, with a sincere dedication to blockchain technology.</div>
+        </div>
+        <div>
+          <div class="title-about">DEDICATED</div>
+          <div class="content2">ART][Stake works tirelessly 24 hours a day, ensuring a guaranteed availability rate of 99.982% - and we also hold Tier3 TIA-942 certification for our Datacenter.</div>
+        </div>
+        <div>
+          <div class="title-about">PROFESSIONAL</div>
+          <div class="content2">ART][Stake operates professional-grade infrastructure, suitable for institutional staking, and provides intuitive tools designed for holders.</div>
+        </div>
+      </div>      
+    </section>
+    <section id="contact" class="contact">
+      <h2>CONTACT&nbsp; <span>US</span>
+      </h2>
+      <p>Do you have any questions, suggestions, or feedback? We'd love to hear them! Please contact us</p>
+      <div class="row">
+        <img src="https://artstake.net/asset/art-brand/global-ART/ads/team.png" alt="art" class="map" />
+        <form name="art-contact-form" action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="Name" name="user" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="E-mail" name="mail" />
+          </div>
+          <div class="input-group">
+            <i data-feather="users"></i>
+            <input type="text" placeholder="Company" name="company" />
+          </div>
+          <div class="pesan">
+            <i data-feather="message-square"></i>
+            <textarea placeholder="Message" name="pesan"></textarea>
+          </div>
+          <button class="btn" id="send-btn">SEND</button>
+        </form>
+      </div>
+    </section>
+    <section id="carousel" class="carousel">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://artstake.net/asset/art-brand/global-ART/ads/ads.svg" alt="Slide 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://artstake.net/asset/art-brand/ART-banner-bg/w-p-b-banner.png" alt="Slide 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://artstake.net/asset/art-brand/global-ART/ads/nodes.svg" alt="Slide 3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://artstake.net/asset/art-brand/ART-banner-bg/w-b-banner.png" alt="Slide 4" />
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="carousel-slide">
+        <div class="slide-dot active"></div>
+        <div class="slide-dot"></div>
+        <div class="slide-dot"></div>
+        <div class="slide-dot"></div>
+        <div class="slide-dot"></div>
+      </div>
+    </section>
+    <section id="blog" class="blog">
+      <h2>Blog&nbsp;&amp;&nbsp;<span>News</span></h2>
+      <div class="tutorial-container" id="blog-posts"></div>
+      <a class="see-more" href="https://news.artstake.net/" target="_blank">Read&nbsp;All</a>
+    </section>
+    
+    <footer id="footer">
+      <div class="socials">
+        <img src="https://artstake.net/asset/art-brand/ART-banner-no-bg/b-w-banner.png" alt="Logo" />
+        <a href="https://github.com/" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://discord.gg/ZJJqQUdr6R" target="_blank">
+          <i class="fab fa-discord"></i>
+        </a>
+        <a href="https://twitter.com/artstake_" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+      <div class="links">
+        <a href="mailto:artstake.net@gmail.com">
+          <i class="fas fa-envelope"></i>&nbsp;Email: artstake.net@gmail.com </a>
+        <a href="#" class="desktop-only">
+          <i class="fa fa-key"></i>&nbsp;PGP: EC055E05A71A45F61026A060005FE135FDC8870A </a>
+        <a href="#" class="desktop-only">
+          <i class="fab fa-keybase"></i>&nbsp;KeyBase: ART Stake </a>
+      </div>
+      <div class="footer-nav">
+        <a href="#">About</a>
+        <a href="#">Network</a>
+        <a href="#">Blog &amp; News</a>
+        <a href="#">Explorer</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="credit">
+        <p>Created by&nbsp; <a href="">ART-Stake</a>&nbsp;| &copy; 2023. </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="/temp/template.js"></script>
+    <script src="js/artstake.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/mainnet.js"></script>
+    <script src="js/testnet.js"></script>
+    <script src="js/next-back.js"></script>
+    <script src="js/price.js"></script>
+    <script src="js/card-menu.js"></script>
+    <script src="https://news.artstake.net/feeds/posts/default?alt=json-in-script&max-results=12&callback=handleResponse"></script>
+  </body>
+</html>
