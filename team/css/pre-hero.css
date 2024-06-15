@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
 
-/* Pre-Hero Section Styling */
 .pre-hero {
 
   padding: 50px 20px;
@@ -39,3 +37,4 @@
 .cta-secondary:hover {
   background-color: #FF66C4; /* Neon Pink */
 }
+

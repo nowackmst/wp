@@ -109,3 +109,79 @@
 .info-box.endpoints a:hover {
     color: #38b2cc;
 }
+
+.bottom-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.key-service {
+    flex: 1 1 30%; /* Membuat setiap box mengambil ruang yang sama dan tidak lebih kecil dari 30% */
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.key-service:hover {
+    transform: scale(1.05);
+}
+
+.key-service h2 {
+    color: #FF0F7B;
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+
+.key-service .data-container {
+    padding: 10px;
+    font-size: 0.85em;
+    flex-grow: 1;
+    color: #000;
+}
+
+.key-service .copy-message {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.75em;
+    transition: opacity 0.3s ease;
+}
+
+.key-service.active .copy-message {
+    display: block;
+}
+
+.cheat-sheet-button {
+    display: inline-block; /* Allows for better control over width and positioning */
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Stylish gradient background */
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 24px; /* Slightly larger padding for a better visual effect */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for color and scale */
+}
+
+.cheat-sheet-button:hover, .cheat-sheet-button:focus {
+    background: linear-gradient(to right, #fc466b, #3f5efb); /* Change gradient on hover/focus */
+    transform: scale(1.05); /* Slight increase in size on hover/focus for emphasis */
+}

@@ -1,5 +1,3 @@
-/////////////////menu animasi NEXT-BACK///////////////////////////////
-
 const backButton = document.getElementById("backButton");
 const nextButton = document.getElementById("nextButton");
 
@@ -61,6 +59,3 @@ displayProjects(currentPage);
 window.addEventListener("resize", () => {
   displayProjects(currentPage);
 });
-
-/////////////////menu animasi NEXT-BACK///////////////////////////////
-

@@ -28,3 +28,4 @@ fetch('/temp/navbar.html')
     }
   });
 });
+

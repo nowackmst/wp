@@ -33,12 +33,6 @@
     color: var(--secondary);
   }
   
-  /* body {
-    font-family: "Poppins", sans-serif, ;
-    background: linear-gradient(to bottom, #010101, #1A1A1A, #070766, #070766, #070766);
-    color: var(--secondary);
-  } */
-  
   .image {
     display: flex;
     justify-content: space-between;

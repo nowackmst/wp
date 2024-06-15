@@ -91,11 +91,11 @@
     <section class="heros" id="home">
         <main class="content">
             <div class="left-content">
-                <h1 class="name">Initia</h1>
-                <p class="tagline">Initia intertwines modular networks through L1 orchestration, L2 and communication protocols, forming a cohesive network fabric.</p>
+                <h1 class="name">Elys</h1>
+                <p class="tagline">Modular L1 Blockchain Infrastructure Empowering Omnichain Applications!</p>
                 <div class="info-box white-box" onclick="copyText(this)">
                     <h2>Automatic Installation</h2>
-                    <p>source <(curl -s https://artstake.net/testnet/initia/autoinstall/)</p>
+                    <p>source <(curl -s https://artstake.net/testnet/elys/autoinstall/)</p>
                     <div class="copy-message">Copied!</div>
                 </div>
                 <div class="fancy-link">
@@ -113,8 +113,8 @@
                 <div class="info-box white-box" onclick="copyText(this)">
                     <h2>Save wallet and validator address</h2>
                     <div class="data-container">
-                        <p>WALLET_ADDRESS=$(initiad keys show $WALLET -a)
-                          VALOPER_ADDRESS=$(initiad keys show $WALLET --bech val -a)
+                        <p>WALLET_ADDRESS=$(elysd keys show $WALLET -a)
+                          VALOPER_ADDRESS=$(elysd keys show $WALLET --bech val -a)
                           echo "export WALLET_ADDRESS="$WALLET_ADDRESS >> $HOME/.bash_profile
                           echo "export VALOPER_ADDRESS="$VALOPER_ADDRESS >> $HOME/.bash_profile
                           source $HOME/.bash_profile</p>
@@ -126,59 +126,57 @@
                 <div class="info-box network">
                     <h2>Network Information</h2>
                     <div class="images-container">
-                        <img src="/services/testnet/initia/Initia_Full_Black.png" alt="Gambar">
+                        <img src="/services/testnet/elys/Logo1.jpg" alt="Gambar">
                     </div>
                     <table>
-                        <tr>
-                            <th>Chain ID</th>
-                            <td id="initiaNetwork">#</td>
-                        </tr>
-                        <tr>
-                            <th>Block Height</th>
-                            <td id="initiaBlockHeight">#</td>
-                        </tr>                        
-                        <tr>
-                            <th>RPC Status</th>
-                            <td id="initiaRpcStatus">#</td>
-                        </tr>
-                    </table>
+                      <tr>
+                          <th>Chain ID</th>
+                          <td id="elysNetwork">#</td>
+                      </tr>
+                      <tr>
+                          <th>Block Height</th>
+                          <td id="elysBlockHeight">#</td>
+                      </tr>                        
+                      <tr>
+                          <th>RPC Status</th>
+                          <td id="elysRpcStatus">#</td>
+                      </tr>
+                  </table>
                 </div>
                 <div class="info-box blockchain-service">
                     <h2>Blockchain Services</h2>
                     <p>Comprehensive Solutions | Services & Tools for all user.</p>
                 </div>
-                
                 <div class="info-box endpoints" style="color: black;">
                     <h2>Endpoints</h2>
                     <ul>
-                        <li><strong>RPC:</strong> <a href="https://rpc.testnet-initia.artstake.net/" target="_blank">https://rpc.testnet-initia.artstake.net/</a></li>
-                        <li><strong>API:</strong> <a href="https://api.testnet-initia.artstake.net/" target="_blank">https://initia-testnet-api.artstake.net</a></li>
-                        <li><strong>gRPC:</strong> <a href="https://initia-testnet-grpc.artstake.net:11090" target="_blank">https://grpc.testnet-initia.artstake.net:433</a></li>
-                        <li><strong>Explorer:</strong> <a href="https://grpc.testnet-initia.artstake.net:433" target="_blank">https://grpc.testnet-initia.artstake.net:433</a></li>
+                        <li><strong>RPC:</strong> <a href="https://rpc.testnet-elys.artstake.net/" target="_blank">https://rpc.testnet-elys.artstake.net/</a></li>
+                        <li><strong>API:</strong> <a href="https://api.testnet-elys.artstake.net/" target="_blank">https://api.testnet-elys.artstake.net/</a></li>
+                        <li><strong>gRPC:</strong> <a href="https://grpc.testnet-elys.artstake.net:433" target="_blank">https://elys-testnet-grpc.artstake.net:433</a></li>
+                        <li><strong>Explorer:</strong> <a href="https://test.artstake.net/" target="_blank">https://test.artstake.net/</a></li>
                     </ul>
                 </div>
-                
             </div>
         </main>
         <div class="bottom-container">
             <div class="key-service" onclick="copyText(this)">
                 <h2>Create a new wallet</h2>
                 <div class="data-container">
-                    <p>initiad keys add $WALLET</p>
+                    <p>elysd keys add $WALLET</p>
                 </div>
                 <div class="copy-message">Copied!</div>
             </div>
             <div class="key-service" onclick="copyText(this)">
                 <h2>Import Wallet</h2>
                 <div class="data-container">
-                    <p>initiad keys add $WALLET --recover</p>
+                    <p>elysd keys add $WALLET --recover</p>
                 </div>
                 <div class="copy-message">Copied!</div>
             </div>
             <div class="key-service" onclick="copyText(this)">
                 <h2>Check sync status</h2>
                 <div class="data-container">
-                    <p>initiad status 2>&1 | jq</p>
+                    <p>elysd status 2>&1 | jq</p>
                 </div>
                 <div class="copy-message">Copied!</div>
             </div>
@@ -188,47 +186,47 @@
                 </a>
             </div>
         </div>
+        
+        </div>        
     </section>
-
     <section class="secondary-section">
         <div class="right-content">
             <div class="info-box white-box" onclick="copyText(this)">
                 <h2>Seed peers</h2>
                 <div class="data-container">
-                    <p>87bd2e866c3449383c1c0e697846af9f068170dc@156.67.82.56:51656</p>
+                    <p>c6c231e5ad5c47f0537be1d30f11555e5886d344@5.189.146.116:26656</p>
                 </div>
                 <div class="copy-message">Copied!</div>
             </div>
             <div class="info-box white-box" onclick="copyText(this)">
                 <h2>State sync peers</h2>
                 <div class="data-container">
-                    <p>4a3ca3aa86541e4623574be483b0f08bf7058fd7@initia-testnet.peer.artstake.net:24256</p>
+                    <p>8288657cb2ba075f600911685670517d18f54f3b@elys-testnet.peer.artstake.net:18656</p>
                 </div>
                 <div class="copy-message">Copied!</div>
             </div>
             <div class="info-box white-box" onclick="copyText(this)">
                 <h2>Live addrbook</h2>
                 <div class="data-container">
-                    <p>curl -Ls https://artstake.net/testnet/initia/addrbook.json > $HOME/.initiad/config/addrbook.json</p>
+                    <p>curl -Ls https://artstake.net/testnet/elys/addrbook.json > $HOME/.elys/config/addrbook.json</p>
                 </div>
                 <div class="copy-message">Copied!</div>
             </div>
             <div class="info-box white-box" onclick="copyText(this)">
                 <h2>Live peers</h2>
                 <div class="data-container">
-                    <p>PEERS="$(curl -sS https://artstake.net/testnet/initia/net_info/ | jq -r '.result.peers[] | "\(.node_info.id)@\(.remote_ip):\(.node_info.listen_addr)"' | awk -F ':' '{print $1":"$(NF)}' | sed -z 's|\n|,|g;s|.$||')" sed -i -e "s|^persistent_peers *=.*|persistent_peers = \"$PEERS\"|" $HOME/.initiad/config/config.toml</p>
+                    <p>PEERS="$(curl -sS https://rpc.testnet-elys.artstake.net/net_info | jq -r '.result.peers[] | "\(.node_info.id)@\(.remote_ip):\(.node_info.listen_addr)"' | awk -F ':' '{print $1":"$(NF)}' | sed -z 's|\n|,|g;s|.$||')" sed -i -e "s|^persistent_peers *=.*|persistent_peers = \"$PEERS\"|" $HOME/.elysconfig/config.toml</p>
                 </div>
                 <div class="copy-message">Copied!</div>
             </div>
         </div>
     </section>
-</section>
-<div id="footer"></div>
-<script>feather.replace();</script>
-<script src="/temp/template.js"></script>
-<script src="/js/script.js"></script>
-<script src="/services/API_RPC_gRPC/rpc-api.js"></script>
-<script src="/services/main/js/annaio.js"></script>
-<script src="/services/main/js/asjedoi.js"></script>
+    <div id="footer"></div>
+    <script>feather.replace();</script>
+    <script src="/temp/template.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/services/API_RPC_gRPC/rpc-api.js"></script>
+    <script src="/services/main/js/annaio.js"></script>
+    <script src="/services/main/js/asjedoi.js"></script>
 </body>
 </html>

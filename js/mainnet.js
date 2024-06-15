@@ -1,5 +1,3 @@
-/////////////////MAINNET///////////////////////////////
-
 function setupCard(cardId) {
     const stakeBtn = document.getElementById(`stake-btn-${cardId}`);
     const modal = document.getElementById(`stake-modal-${cardId}`);
@@ -46,7 +44,6 @@ function setupCard(cardId) {
   setupCard("polkadot");
   // setupCard("composable");
   // setupCard("gitopia");
-  setupCard("q");
   setupCard("eywa");
   setupCard("covalent");
   setupCard("empower");

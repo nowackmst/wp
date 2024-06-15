@@ -1,88 +1,356 @@
-#stat {
-    padding: 4rem 7%;
-    overflow: hidden;
+.stat {
     background-color: #000;
-    border-radius: 12px;
+    color: #fff;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
 }
 
 .stats-home {
     display: flex;
     justify-content: space-around;
-    max-width: 1000px;
-    margin: 0 auto;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .stat-item {
-    text-align: center;
-    padding: 2.5rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-    width: 45%;
-    margin: 1rem;
-    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: calc(25% - 20px); /* Adjusting flex-basis to account for margin */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adding transitions for interactive effects */
 }
 
 .stat-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slight scale effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); /* Enhanced shadow on hover */
 }
 
 .stat-value {
-    font-size: 2rem;
+    font-size: 24px;
     font-weight: bold;
-    color: #29FF94;
+    margin-bottom: 5px;
 }
 
 .stat-label {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    color: #fff;
-}
-
-.eco-friendly {
-    background-color: #c2e5cb;
-    order: 1; /* Set the order to move it to the right */
-}
-
-.stat-icon {
-    width: 3rem;
-    height: 3rem;
-    margin-bottom: 1rem;
-}
-
-.fa-network-wired {
-    font-size: 8rem;
-    color: #29FF94;
+    font-size: 16px;
+    opacity: 0.8;
 }
 
 .view-stats-container {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin-top: 20px;
 }
 
 .view-stats-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 30px;
-    background-color: #3498db;
+    background-color: #444;
     color: #fff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .view-stats-button:hover {
-    background-color: #2980b9;
+    background-color: #555; /* Slightly lighter on hover for visual feedback */
 }
 
-.view-stats-button .link-icon {
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
+
+.about {
+    background-color: #010101;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
 }
+
+.section-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #FF0F7B;
+}
+
+/* Base styles */
+.about {
+    background-color: #010101;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #FF0F7B;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-img {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+
+.content-about {
+    flex: 2;
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.space {
+    background: #222222;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.space-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.space p {
+    font-size: 1rem;
+    color: #E0E0E0;
+}
+
+.full-width {
+    background-color: #010101;
+    border-radius: 10px;
+    color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 20px;
+    transition: transform 0.3s;
+}
+
+.full-width:hover {
+    transform: translateY(-5px);
+}
+
+.full-width h3 {
+    color: #f4f4f4;
+    margin-bottom: 15px;
+}
+
+.full-width ul li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+}
+
+.full-width ul li:hover {
+    background-color: #292E49;
+    cursor: pointer;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) { /* Adjustments for tablets and small laptops */
+    .about-container, .content-about {
+        flex-direction: column;
+    }
+
+    .about-img, .content-about {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .column {
+        flex: none; /* Takes full width */
+        padding: 5px;
+    }
+
+    .section-title {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) { /* Adjustments for mobile devices */
+    .about {
+        padding: 20px;
+    }
+
+    .space, .full-width {
+        padding: 10px;
+    }
+
+    .space-title, .full-width h3 {
+        font-size: 1.2rem;
+    }
+
+    .space p, .full-width ul li {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --text-color: #333;
+    --background-light: #f4f4f4;
+    --highlight-color: #007BFF;
+    --border-color: #ddd;
+    --hover-effect: scale(1.03); /* Scale effect for hover */
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: var(--background-light);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.feature {
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.feature:hover {
+    transform: var(--hover-effect);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.feature i {
+    font-size: 2rem;
+    color: var(--highlight-color);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover i {
+    transform: rotate(10deg);
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.validation-tools {
+    background-color: var(--background-light);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+.tool {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.validation-container {
+    color: var(--highlight-color);
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.tool-title {
+    color: #010101;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.tool-description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) { /* Adjustments for tablets and small laptops */
+    .about-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .features-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .feature {
+        padding: 15px;
+    }
+
+    .validation-container, .tool-title {
+        font-size: 1.5rem;
+    }
+
+    .tool-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) { /* Adjustments for mobile devices */
+    .features-container {
+        grid-template-columns: 1fr; /* Stack features vertically on small screens */
+    }
+
+    .feature, .tool {
+        padding: 10px;
+    }
+
+    .validation-container, .tool-title {
+        font-size: 1.25rem;
+    }
+
+    .tool-description {
+        font-size: 0.8rem;
+    }
+}
+

@@ -171,23 +171,6 @@ const projects = [
     }
   },
   {
-    id: 'q',
-    title: 'Q-Blockchain',
-    dashboardUrl: 'https://hq.q.org/staking/validators/0xB4B8023326F5a186a75c17EbC9f256A4cBa60F97',
-    howToStakeUrl: 'https://news.artstake.net',
-    symbol: '$Q',
-    logo: 'https://artstake.net/asset/node/mainnet/qchain.svg',
-    description: 'Q is a new type of blockchain that aims to combine the benefits of a public, open, and decentralized ledger with the transparency and predictability of private contracts. This combination makes it suitable for a wide range of applications that want decentralization but also need scalability and reliability.',
-    validatorAddress: '0xB4B8023326F5a186a75c17EbC9f256A4cBa60F97',
-    links: {
-      website: 'https://q.org/',
-      twitter: 'https://twitter.com/QBlockchain',
-      discord: 'https://discord.com/invite/YTgkvJvZGD',
-      telegram: 'https://t.me/Q_Community',
-      explorer: 'https://explorer.q.org/' 
-    }
-  },
-  {
     id: 'pion',
     title: 'Muon',
     dashboardUrl: 'https://staking.polkadot.network/#/nominate',
